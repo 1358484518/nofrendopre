@@ -113,3 +113,12 @@ comfortable with reading the C code to find them out:
 50 - Joypad 1 down
 51 - Joypad 1 left
 52 - Joypad 1 right
+
+
+在linux 编译是需要执行：
+
+sed -i 's/\r$//' configure
+sed -i 's/\r$//' config.guess
+sed -i 's/\r$//' config.sub
+
+再执行 ./configure
